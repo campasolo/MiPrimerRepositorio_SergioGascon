@@ -85,3 +85,29 @@ git pull
 Con el comando anterior traigo los cambios al repositorio local.
 Voy al editor VS COde y verifico los cambios en el archivo correspondiente.
 
+### Parte 6: Resolución de comflictos
+
+git branch main
+Con el comando anterior nos posicionamos en la rama main
+
+Editamos el archivo script.js cambaindo el texto de salida del console.log al siguiente texto:
+console.log("Hola desde la rama main");
+
+git commit -m "Modificación rama main"
+Con el comando anterior ejecutamos un commit en la rama actual, main
+
+git push –set-upstream origin main
+Con el comando anterior subo al repositorio remoto
+
+git branch dev
+Con el comando anterior nos posicionamos en la rama dev
+
+Editamos el archivo script.js cambaindo el texto de salida del console.log al siguiente texto:
+console.log("Hola desde la rama dev");
+
+git commit -m "Modificación rama dev"
+Con el comando anterior ejecutamos un commit en la rama actual, main
+
+git push –set-upstream origin main
+Con el comando anterior subo al repositorio remoto
+
