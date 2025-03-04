@@ -90,7 +90,7 @@ Voy al editor VS COde y verifico los cambios en el archivo correspondiente.
 git branch main
 Con el comando anterior nos posicionamos en la rama main
 
-Editamos el archivo script.js cambaindo el texto de salida del console.log al siguiente texto:
+Editamos el archivo script.js cambiando el texto de salida del console.log al siguiente texto:
 console.log("Hola desde la rama main");
 
 git commit -m "Modificación rama main"
@@ -102,12 +102,31 @@ Con el comando anterior subo al repositorio remoto
 git branch dev
 Con el comando anterior nos posicionamos en la rama dev
 
-Editamos el archivo script.js cambaindo el texto de salida del console.log al siguiente texto:
+Editamos el archivo script.js cambiando el texto de salida del console.log al siguiente texto:
 console.log("Hola desde la rama dev");
 
 git commit -m "Modificación rama dev"
 Con el comando anterior ejecutamos un commit en la rama actual, main
 
-git push –set-upstream origin main
+git push –set-upstream origin dev
 Con el comando anterior subo al repositorio remoto
+
+git checkout main
+Con el comando anterior nos posicionamos en la rama main
+
+git merge dev
+Con el comando anterior realizamos la fusión de las ramas. GIT nos informa de que hay un conflicto que resolver. Y nos indica que lo resolvamos con la yuda de un editor.
+
+Abrimos VS Code y nos indica ala bris scrip.js que podemos resolver el conflicto con su herramienta, que abre a tres bandas, el contenido de dev, el de main y debajo el contenido final del archivo.
+
+Escribimos en la sección final cómo queremos resolver y guardamos.
+
+git add .
+Con el comando anterior, agregamos los cambios a la rama main
+
+git commit -m "Conflicto resuelto en el merge"
+Con el comando anterior guardamos el cambio en la rama.
+
+git push
+Con el comando anterior subimos los cambios a remoto.
 
