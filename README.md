@@ -6,3 +6,5 @@ Este repositorio va a contener los documentos relacionados con la práctica RA4 
 ## Autor
 
 Esta práctica ha sido realizada por Sergio Gascón, alumno de DAM1V en el CFPIP Los Enlaces
+
+"Este es un cambio hecho desde GitHub por Sergio Gascón, desde el editor de archivos de GitHub."
