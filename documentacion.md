@@ -57,3 +57,31 @@ Con el comando anterior creo la rama dev
 
 git checkout dev
 Con el comando anterior me cambio a la rama dev
+
+Creo el archivo script.js con el comando touch script.js y lo edito en VS Code
+
+git add .
+Agrego a la rama dev los ficheros nuevos
+
+git commit -m “Subiendo los cambios a la rama dev”
+Con el comando anterior ejecuto un commit de los cambios
+
+git push –set-upstream origin dev
+Con el comando anterior subo al repositorio remoto
+
+Si actualizo la web de Github, se indica que se ha creado una nueva rama, me posiciono sobre la rama dev y puedo ver los nuevos archivos.
+
+git checkout main
+Con el comando anterior nos posicionamos en la rama dev
+
+### Parte 5: Descargar cambios 
+
+En la web de GitHub, edito el fichero README.md y agrego la siguiente línea:
+"Este es un cambio hecho desde GitHub por Sergio Gascón, desde el editor de archivos de GitHub."
+
+Pulso el botón de "commit changes" y se muestra un diálogo para escribir un mensaje para el commit. Vuelvo a pulsar "commit changes" y todo queda almacenado en la rama.
+
+git pull
+Con el comando anterior traigo los cambios al repositorio local.
+Voy al editor VS COde y verifico los cambios en el archivo correspondiente.
+
